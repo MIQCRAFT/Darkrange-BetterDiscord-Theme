@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+░█████╗░░█████╗░██████╗░██╗░░░██╗██████╗░██╗░██████╗░██╗░░██╗████████╗  
+██╔══██╗██╔══██╗██╔══██╗╚██╗░██╔╝██╔══██╗██║██╔════╝░██║░░██║╚══██╔══╝  
+██║░░╚═╝██║░░██║██████╔╝░╚████╔╝░██████╔╝██║██║░░██╗░███████║░░░██║░░░  
+██║░░██╗██║░░██║██╔═══╝░░░╚██╔╝░░██╔══██╗██║██║░░╚██╗██╔══██║░░░██║░░░  
+╚█████╔╝╚█████╔╝██║░░░░░░░░██║░░░██║░░██║██║╚██████╔╝██║░░██║░░░██║░░░  
+░╚════╝░░╚════╝░╚═╝░░░░░░░░╚═╝░░░╚═╝░░╚═╝╚═╝░╚═════╝░╚═╝░░╚═╝░░░╚═╝░░░  
+
+██████╗░░█████╗░██████╗░░░███╗░░
+╚════██╗██╔══██╗╚════██╗░████║░░
+░░███╔═╝██║░░██║░░███╔═╝██╔██║░░
+██╔══╝░░██║░░██║██╔══╝░░╚═╝██║░░
+███████╗╚█████╔╝███████╗███████╗
+╚══════╝░╚════╝░╚══════╝╚══════╝
+
+███╗░░░███╗██╗░██████╗░░█████╗░██████╗░░█████╗░███████╗████████╗  
+████╗░████║██║██╔═══██╗██╔══██╗██╔══██╗██╔══██╗██╔════╝╚══██╔══╝  
+██╔████╔██║██║██║██╗██║██║░░╚═╝██████╔╝███████║█████╗░░░░░██║░░░  
+██║╚██╔╝██║██║╚██████╔╝██║░░██╗██╔══██╗██╔══██║██╔══╝░░░░░██║░░░  
+██║░╚═╝░██║██║░╚═██╔═╝░╚█████╔╝██║░░██║██║░░██║██║░░░░░░░░██║░░░  
+╚═╝░░░░░╚═╝╚═╝░░░╚═╝░░░░╚════╝░╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░░░░░░░╚═╝░░░  
+
+██████╗░██╗░░░░░███████╗░█████╗░░██████╗███████╗  
+██╔══██╗██║░░░░░██╔════╝██╔══██╗██╔════╝██╔════╝  
+██████╔╝██║░░░░░█████╗░░███████║╚█████╗░█████╗░░  
+██╔═══╝░██║░░░░░██╔══╝░░██╔══██║░╚═══██╗██╔══╝░░  
+██║░░░░░███████╗███████╗██║░░██║██████╔╝███████╗  
+╚═╝░░░░░╚══════╝╚══════╝╚═╝░░╚═╝╚═════╝░╚══════╝  
+
+██████╗░░█████╗░███╗░░██╗██╗████████╗
+██╔══██╗██╔══██╗████╗░██║╚█║╚══██╔══╝
+██║░░██║██║░░██║██╔██╗██║░╚╝░░░██║░░░
+██║░░██║██║░░██║██║╚████║░░░░░░██║░░░
+██████╔╝╚█████╔╝██║░╚███║░░░░░░██║░░░
+╚═════╝░░╚════╝░╚═╝░░╚══╝░░░░░░╚═╝░░░
+
+██████╗░██╗░█████╗░██╗░░██╗  ██╗░░░██╗██████╗░  ████████╗██╗░░██╗███████╗
+██╔══██╗██║██╔══██╗██║░██╔╝  ██║░░░██║██╔══██╗  ╚══██╔══╝██║░░██║██╔════╝
+██████╔╝██║██║░░╚═╝█████═╝░  ██║░░░██║██████╔╝  ░░░██║░░░███████║█████╗░░
+██╔═══╝░██║██║░░██╗██╔═██╗░  ██║░░░██║██╔═══╝░  ░░░██║░░░██╔══██║██╔══╝░░
+██║░░░░░██║╚█████╔╝██║░╚██╗  ╚██████╔╝██║░░░░░  ░░░██║░░░██║░░██║███████╗
+╚═╝░░░░░╚═╝░╚════╝░╚═╝░░╚═╝  ░╚═════╝░╚═╝░░░░░  ░░░╚═╝░░░╚═╝░░╚═╝╚══════╝
+
+░█████╗░░█████╗░██████╗░██╗███╗░░██╗░██████╗░  
+██╔══██╗██╔══██╗██╔══██╗██║████╗░██║██╔════╝░  
+██║░░╚═╝██║░░██║██║░░██║██║██╔██╗██║██║░░██╗░  
+██║░░██╗██║░░██║██║░░██║██║██║╚████║██║░░╚██╗  
+╚█████╔╝╚█████╔╝██████╔╝██║██║░╚███║╚██████╔╝  
+░╚════╝░░╚════╝░╚═════╝░╚═╝╚═╝░░╚══╝░╚═════╝░  
+
+░██████╗██╗░░░██╗░██████╗████████╗███████╗███╗░░░███╗
+██╔════╝╚██╗░██╔╝██╔════╝╚══██╔══╝██╔════╝████╗░████║
+╚█████╗░░╚████╔╝░╚█████╗░░░░██║░░░█████╗░░██╔████╔██║
+░╚═══██╗░░╚██╔╝░░░╚═══██╗░░░██║░░░██╔══╝░░██║╚██╔╝██║
+██████╔╝░░░██║░░░██████╔╝░░░██║░░░███████╗██║░╚═╝░██║
+╚═════╝░░░░╚═╝░░░╚═════╝░░░░╚═╝░░░╚══════╝╚═╝░░░░░╚═╝
+
+░█████╗░███╗░░██╗  ████████╗██╗░░██╗██╗░██████╗  
+██╔══██╗████╗░██║  ╚══██╔══╝██║░░██║██║██╔════╝  
+██║░░██║██╔██╗██║  ░░░██║░░░███████║██║╚█████╗░  
+██║░░██║██║╚████║  ░░░██║░░░██╔══██║██║░╚═══██╗  
+╚█████╔╝██║░╚███║  ░░░██║░░░██║░░██║██║██████╔╝  
+░╚════╝░╚═╝░░╚══╝  ░░░╚═╝░░░╚═╝░░╚═╝╚═╝╚═════╝░  
+
+░██╗░░░░░░░██╗███████╗██████╗░░██████╗██╗████████╗███████╗
+░██║░░██╗░░██║██╔════╝██╔══██╗██╔════╝██║╚══██╔══╝██╔════╝
+░╚██╗████╗██╔╝█████╗░░██████╦╝╚█████╗░██║░░░██║░░░█████╗░░
+░░████╔═████║░██╔══╝░░██╔══██╗░╚═══██╗██║░░░██║░░░██╔══╝░░
+░░╚██╔╝░╚██╔╝░███████╗██████╦╝██████╔╝██║░░░██║░░░███████╗
+░░░╚═╝░░░╚═╝░░╚══════╝╚═════╝░╚═════╝░╚═╝░░░╚═╝░░░╚══════╝
+-->
+
+<head id="top">
+
+   <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1.0" name="viewport">
+   <title>Miqcraft Theme</title>
+   <meta content="" name="descriptison">
+   <meta content="" name="keywords">
+   <meta name="google-site-verification" content="ePYPx8_jFwjAL0BxhhdBXIbwpP-Bft3QLftrpGgsxsk" />
+   <!-- Google Analytics -->
+   <script>
+      (function (i, s, o, g, r, a, m) {
+         i['GoogleAnalyticsObject'] = r;
+         i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+         }, i[r].l = 1 * new Date();
+         a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+         a.async = 1;
+         a.src = g;
+         m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+      ga('create', 'UA-XXXXX-Y', 'auto');
+      ga('send', 'pageview');
+   </script>
+   <!-- End Google Analytics -->
+   <!-- Google Analytics -->
+   <script>
+      window.ga = window.ga || function () {
+         (ga.q = ga.q || []).push(arguments)
+      };
+      ga.l = +new Date;
+      ga('create', 'UA-XXXXX-Y', 'auto');
+      ga('send', 'pageview');
+   </script>
+   <script async src='https://www.google-analytics.com/analytics.js'></script>
+   <!-- End Google Analytics -->
+   <!-- Google Fonts -->
+   <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet">
+   <link
+      href="https://fonts.googleapis.com/css?family=ABeeZee|IBM+Plex+Sans+Condensed|Darker+Grotesque|Didact+Gothic|Cabin|Hammersmith+One|Hind+Madurai|PT+Sans+Caption&display=swap"
+      rel="stylesheet">
+
+   <!-- Vendor CSS Files -->
+   <link rel="stylesheet" href="/assets/css/style.css">
+   <link rel="stylesheet" href="/assets/css/sweetalert2.min.css">
+   <link rel="stylesheet" href="/assets/font-awesome/css/all.min.css">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+   <!--link rel="stylesheet" type="text/css" href="assets/css/lightmode.css"-->
+
+   <!--FAVICON ICO-->
+   <link href="/assets/ico/favicon.ico" type="image/x-icon" rel="shortcut icon">
+   <link href="/assets/ico/favicon.ico" type="image/x-icon" rel="icon">
+   <link rel="apple-touch-icon" sizes="57x57" href="/assets/ico/apple-icon-57x57.png">
+   <link rel="apple-touch-icon" sizes="60x60" href="/assets/ico/apple-icon-60x60.png">
+   <link rel="apple-touch-icon" sizes="72x72" href="/assets/ico/apple-icon-72x72.png">
+   <link rel="apple-touch-icon" sizes="76x76" href="/assets/ico/apple-icon-76x76.png">
+   <link rel="apple-touch-icon" sizes="114x114" href="/assets/ico/apple-icon-114x114.png">
+   <link rel="apple-touch-icon" sizes="120x120" href="/assets/ico/apple-icon-120x120.png">
+   <link rel="apple-touch-icon" sizes="144x144" href="/assets/ico/apple-icon-144x144.png">
+   <link rel="apple-touch-icon" sizes="152x152" href="/assets/ico/apple-icon-152x152.png">
+   <link rel="apple-touch-icon" sizes="180x180" href="/assets/ico/apple-icon-180x180.png">
+   <link rel="icon" type="image/png" sizes="192x192" href="/assets/ico/android-icon-192x192.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="/assets/ico/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="96x96" href="/assets/ico/favicon-96x96.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="/assets/ico/favicon-16x16.png">
+   <link rel="manifest" href="/assets/ico/manifest.json">
+   <meta name="msapplication-TileColor" content="#ffffff">
+   <meta name="msapplication-TileImage" content="/assets/ico/ms-icon-144x144.png">
+   <!--//-->
+
+
+
+   <!--Bagian Share Link-->
+   <meta name="author" content="Miqdad">
+   <meta name="author-url" content="https://www.instagram.com/miq.co">
+   <meta name="author-email" content="mmiqdad1712@gmail.com">
+   <meta content="Easy to Use" itemprop="name">
+   <meta content="Miqcraft Theme" name="twitter:title">
+   <meta content="Easy to Use" name="twitter:image:alt">
+   <meta content="Easy to Use" property="og:image:alt">
+   <meta content="Miqcraft Theme" property="og:title">
+   <meta content="Easy to Use" property="og:site_name">
+   <!-- Keywords -->
+   <meta content="Easy to Use" name="keywords">
+   <meta content="Easy to Use" property="article:tag">
+   <!-- Desc -->
+   <meta content="Theme:  Instagram, Discord, Youtube, Classroom." name="description">
+   <meta content="Theme:  Instagram, Discord, Youtube, Classroom." name="twitter:description">
+   <meta content="Theme:  Instagram, Discord, Youtube, Classroom." itemprop="description">
+   <!-- URL -->
+   <meta name="theme-color" content="#ffbb00">
+   <link href="https://miqcraft-theme.netlify.app/" rel="canonical">
+   <link href="https://miqcraft-theme.netlify.app/" hreflang="x-default" rel="alternate">
+   <meta content="https://miqcraft-theme.netlify.app/" property="og:url"><!-- OG & Card Type -->
+   <meta content="summary_large_image" name="twitter:card">
+   <meta content="article" property="og:type"><!-- Author -->
+   <meta content="@miqcraft_" name="twitter:site"><!-- Twitter @username -->
+   <meta content="@miqcraft_" name="twitter:creator"><!-- Twitter @username -->
+   <!--//-->
+
+</head>
+
+<body>
+
+
+
+   <nav class="navbar navbar-expand-lg navbar-dark mt-3">
+      <div class="container">
+         <div class="logo-web" onclick="location.href='https://miqcraft-theme.netlify.app/theme';">
+            <a id="web-title" class="navbar-brand"><span class="text1-logo">miqcraft.</span><br><span
+                  class="text2-logo">theme</span></a>
+         </div>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+               <a class="nav-link " id="menu" href="https://mewinvite.netlify.app/" target="_blank">Discord Server</a>
+               <a class="nav-link js-scroll-trigger" href="#theme">Theme</a>
+            </div>
+         </div>
+      </div>
+   </nav>
+
+   <!-- Header Section -->
+   <section class="header">
+      <div class="container">
+         <div class="row">
+            <!-- Header Text -->
+            <div class="col-md-6 align-self-center" id="header-text">
+               <div class="text-header">
+                  <h4>Easy to use</h4>
+                  <p>
+                     Everything Darkmode.
+                  </p>
+               </div>
+               <!-- Email Me -->
+               <div class="btn-sosial">
+                  <a class="btn btn-outline-light pt-2 pb-2 pl-3 pr-3" id="btn-email-me"
+                     href="https://discord.com/users/586516314261159971" target="_blank">MyQ#4052</a>
+                  <!-- Social Media -->
+                  <span class="social-media">
+                     <a class="ml-4" href="https://www.instagram.com/miqcraft_/" target="_blank"><i
+                           class="fab fa-instagram fa-1x"></i></a>
+                     <a class="ml-4" href="https://github.com/MIQCRAFT" target="_blank"><i
+                           class="fab fa-github fa-1x"></i></a>
+                     <a class="ml-4" href="https://www.youtube.com/c/MIQCRAFT/videos" target="_blank"><i
+                           class="fab fa-youtube fa-1x"></i></a>
+                  </span>
+               </div>
+            </div>
+
+            <!-- Header Image -->
+            <div class="col-md-6 d-none d-lg-block">
+               <img src="/assets/img/tampilan/home2.png" class="vector" />
+            </div>
+         </div>
+      </div>
+      <div id="theme"></div>
+   </section>
+
+
+
+   <!-- Design Portfolio -->
+   <section class="project mb-5">
+      <div class="container">
+         <h3 class="mb-4 text-center">Projects</h3>
+         <div class="card" id="card-project">
+            <div class="row">
+               <div class="col-lg-4 mt-3" align="center">
+                  <a href="/page/instagram-theme.html">
+                     <img class="project-preview" src="/assets/img/tampilan/1.jpg" width="100%"
+                        alt="Event Managemen App" />
+                  </a>
+                  <div class="row mt-3">
+                     <div class="col">
+                        <a class="view-code" href="/page/instagram-theme.html"><i class="fas fa-external-link-alt"></i>
+                           View Details</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 mt-3" align="center">
+
+                  <a href="/page/google-classroom-theme.html">
+                     <img class="project-preview" src="/assets/img/tampilan/2.jpg" width="100%"
+                        alt="Movie Catalogue App" />
+                  </a>
+                  <div class="row mt-3">
+                     <div class="col">
+                        <a class="view-code" href="/page/google-classroom-theme.html"><i
+                              class="fas fa-external-link-alt"></i>
+                           View Details</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 mt-3" align="center">
+                  <a href="/page/youtube-theme.html">
+                     <img class="project-preview" src="/assets/img/tampilan/3.jpg" width="100%"
+                        alt="First Flutter App" />
+                  </a>
+                  <div class="row mt-3">
+                     <div class="col">
+                        <a class="view-code" href="/page/youtube-theme.html"><i class="fas fa-external-link-alt"></i>
+                           View Details</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 mt-3" align="center">
+                  <a href="/page/discord-theme.html">
+                     <img class="project-preview" src="/assets/img/tampilan/4.jpg" width="100%"
+                        alt="First Flutter App" />
+                  </a>
+                  <div class="row mt-3">
+                     <div class="col">
+                        <a class="view-code" href="/page/discord-theme.html"><i class="fas fa-external-link-alt"></i>
+                           View Details</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 mt-3" align="center">
+                  <a>
+                     <!--href="/page/discord-theme.html"-->
+                     <img class="project-preview" src="/assets/img/tampilan/5.jpg" width="100%"
+                        alt="First Flutter App" />
+                  </a>
+                  <!-- <div class="row mt-3">
+                     <div class="col">
+                        <a class="view-code" href="/page/discord-theme.html"><i class="fas fa-external-link-alt"></i>
+                           View Details</a>
+                     </div>
+                  </div> -->
+               </div>
+               <div class="col-lg-4 mt-3" align="center">
+                  <a>
+                     <!--href="/page/discord-theme.html"-->
+                     <img class="project-preview" src="/assets/img/tampilan/6.jpg" width="100%"
+                        alt="First Flutter App" />
+                  </a>
+                  <!-- <div class="row mt-3">
+                     <div class="col">
+                        <a class="view-code" href="/page/discord-theme.html"><i class="fas fa-external-link-alt"></i>
+                           View Details</a>
+                     </div>
+                  </div> -->
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <footer>
+      <div class="container">
+         <div class="row">
+            <div class="col" align="center">
+               <p class="textfooter">
+                  website by <a href="https://www.instagram.com/miq.co" target="_blank">miq.co</a>
+               </p>
+            </div>
+         </div>
+      </div>
+   </footer>
+
+
+   <script src="/assets/js/jquery-3.2.1.min.js"></script>
+   <script src="/assets/js/sweetalert2.min.js"></script>
+   <script src="/assets/font-awesome/js/all.min.js"></script>
+   <script src="/assets/js/popper.min.js"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+   </script>
+   <script>
+      document.onkeydown = function (e) {
+         if (event.keyCode == 123) {
+            return false;
+         }
+         if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+            return false;
+         }
+         if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+            return false;
+         }
+         if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+            return false;
+         }
+      }
+   </script>
+   <script>
+      document.addEventListener('contextmenu', event => event.preventDefault());
+   </script>
+   <script>
+      // SCROLL JS SMOOTH
+      (function ($) {
+         "use strict";
+         $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location
+               .hostname ==
+               this.hostname) {
+               var target = $(this.hash);
+               target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+               if (target.length) {
+                  $('html, body').animate({
+                     scrollTop: (target.offset().top - 56)
+                  }, 1000, "easeInOutExpo");
+                  return false;
+               }
+            }
+         });
+         $('.js-scroll-trigger').click(function () {
+            $('.navbar-collapse').collapse('hide');
+         });
+         $('body').scrollspy({
+            target: '#mainNav',
+            offset: 56
+         });
+      })(jQuery);
+      // END
+   </script>
+</body>
+
+</html>
