@@ -1,5 +1,5 @@
 # About theme
-***Discord_Theme*** theme is made by **MyQ#4052**<br>
+**Darkrange** theme is made by **MyQ#4052**<br>
 This was made to let everyone who wants, able to have a more good-looking style. It supports any plugins.
 Need help? Join my server! **[https://mewinvite.netlify.app/](https://mewinvite.netlify.app/)**
 
