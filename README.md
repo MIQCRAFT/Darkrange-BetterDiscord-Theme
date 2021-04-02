@@ -1,3 +1,5 @@
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+
 # About theme
 **Darkrange** theme is made by **MyQ#4052**<br>
 This was made to let everyone who wants, able to have a more good-looking style. It supports any plugins.
@@ -21,3 +23,7 @@ Follow instructions : Go to [https://miqcraft-theme.netlify.com](https://miqcraf
 ![Preview 3](https://miqcraft-theme.netlify.app/assets/img/sneak%20peek%20(4).png)
 
 ![Preview 4](https://miqcraft-theme.netlify.app/assets/img/sneak%20peek%20(3).png)
+
+
+# License
+[ GNU GENERAL PUBLIC LICENSE ](https://github.com/MIQCRAFT/Darkrange-BetterDiscord-Theme/blob/main/LICENSE)
