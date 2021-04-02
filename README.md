@@ -13,10 +13,10 @@ Follow instructions : Go to [https://miqcraft-theme.netlify.com](https://miqcraf
 **I found a bug, what do I do?**<br>Make a **Pull Request / Issue** and tell me :)
 
 # Screenshots
-![Preview 1](https://i.alexflipnote.dev/6c5Nb2e.png)
+![Preview 1](https://miqcraft-theme.netlify.app/assets/img/sneak%20peek%20(2).png)
 
-![Preview 2](https://i.alexflipnote.dev/7dEBUDA.png)
+![Preview 2](https://miqcraft-theme.netlify.app/assets/img/sneak%20peek%20(1).png)
 
-![Preview 3](https://i.alexflipnote.dev/9eFXRVs.png)
+![Preview 3](https://miqcraft-theme.netlify.app/assets/img/sneak%20peek%20(4).png)
 
-![Preview 4](https://i.alexflipnote.dev/6EuCjnZ.png)
+![Preview 4](https://miqcraft-theme.netlify.app/assets/img/sneak%20peek%20(3).png)
