@@ -7,7 +7,8 @@ Need help? Join my server! **[https://mewinvite.netlify.app/](https://mewinvite.
 
 # Installing With BetterDiscord
 ### For Windows, MAC, LINUX
-Follow instructions : Go to [https://itsmemiq.netlify.com](https://itsmemiq.netlify.app/)
+Download File [Darkrange.theme.css](https://raw.githubusercontent.com/MIQCRAFT/Darkrange-BetterDiscord-Theme/main/Darkrange.theme.css).
+Follow instructions : Go to [https://itsmemiq.netlify.com](https://itsmemiq.netlify.app/tutorial/darkrange-betterdiscord-theme)
 
 # Installing With Extension Web-Browser
 ### For Web Browser With Extension
