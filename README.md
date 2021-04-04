@@ -5,15 +5,8 @@
 This was made to let everyone who wants, able to have a more good-looking style. It supports any plugins.
 Need help? Join my server! **[https://mewinvite.netlify.app/](https://mewinvite.netlify.app/)**
 
-# Installing With BetterDiscord
-### For Windows, MAC, LINUX
-Follow instructions : [https://itsmemiq.netlify.com](https://itsmemiq.netlify.app/tutorial/darkrange-betterdiscord-theme)
-### Download File [Darkrange.theme.css](https://raw.githubusercontent.com/MIQCRAFT/Darkrange-BetterDiscord-Theme/main/Darkrange.theme.css).
-
-
-# Installing With Extension Web-Browser
-### For Web Browser With Extension
-### Download FIle & instructions : [https://miqcraft-theme.netlify.com](https://miqcraft-theme.netlify.app/page/discord-theme.html)
+# Installing
+### Download FIle & Follow instructions : [https://miqcraft-theme.netlify.com](https://miqcraft-theme.netlify.app/page/discord-theme).
 
 **I found a bug, what do I do?**<br>Make a **Pull Request / Issue** and tell me :)
 
