@@ -7,12 +7,13 @@ Need help? Join my server! **[https://mewinvite.netlify.app/](https://mewinvite.
 
 # Installing With BetterDiscord
 ### For Windows, MAC, LINUX
-Download File [Darkrange.theme.css](https://raw.githubusercontent.com/MIQCRAFT/Darkrange-BetterDiscord-Theme/main/Darkrange.theme.css).
-Follow instructions : Go to [https://itsmemiq.netlify.com](https://itsmemiq.netlify.app/tutorial/darkrange-betterdiscord-theme)
+Follow instructions : [https://itsmemiq.netlify.com](https://itsmemiq.netlify.app/tutorial/darkrange-betterdiscord-theme)
+### Download File [Darkrange.theme.css](https://raw.githubusercontent.com/MIQCRAFT/Darkrange-BetterDiscord-Theme/main/Darkrange.theme.css).
+
 
 # Installing With Extension Web-Browser
 ### For Web Browser With Extension
-Follow instructions : Go to [https://miqcraft-theme.netlify.com](https://miqcraft-theme.netlify.app/page/discord-theme.html)
+### Download FIle & instructions : [https://miqcraft-theme.netlify.com](https://miqcraft-theme.netlify.app/page/discord-theme.html)
 
 **I found a bug, what do I do?**<br>Make a **Pull Request / Issue** and tell me :)
 
